@@ -3,9 +3,10 @@ import React from 'react'
 import { useState } from 'react';
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import {MainContainer,ChatContainer,MessageList,Message,MessageInput,TypingIndicator} from "@chatscope/chat-ui-kit-react"
+import Nav from "../components/Nav"
+import "../index.css"
 
-
-const API_KEY = "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";
+const API_KEY = "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";
 function Chat() {
   const [typing,setTyping]= useState(false)
   const [messages,setMessages]=useState([
@@ -42,7 +43,7 @@ function Chat() {
 
     const systemMessage = {
       role:"system",
-      content: "Explain all the things like you are a professional body builder."
+      content: "Explain all the things like you are a professional body builder , fitness coach and expert nutritionist",
     }
 
     const apiRequestBody = {
@@ -73,9 +74,10 @@ function Chat() {
     });
   }
   return (
-    <div >
-      
-      <div style={{position:"relative",height:"800px",width:"700px"}}>
+    <>
+    <Nav />
+    <div className="center">
+      <div  style={{position:"relative",height:"600px",width:"500px",marginTop:"20px"}} >
         <MainContainer>
           <ChatContainer>
             <MessageList
@@ -89,8 +91,8 @@ function Chat() {
           </ChatContainer>
         </MainContainer>
       </div>
-    
-    </div>
+      </div>
+      </> 
   );
 }
 export default Chat;

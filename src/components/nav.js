@@ -25,10 +25,13 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import mylogo from "../images/db.jpg" 
+import myprf from "../images/profile.png" 
+
 
 const navigation = [
   { name: 'GymGuru', href: '/', current: true },
-  { name: 'Contact', href: '/Contact.js', current: false },
+  { name: 'Bmi', href: '/bmi', current: false },
+  { name: 'About Us', href: '/about', current: false },
   
 ]
 
@@ -99,7 +102,7 @@ export default function Example() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src={myprf}
                         alt=""
                       />
                     </Menu.Button>

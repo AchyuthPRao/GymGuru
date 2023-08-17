@@ -2,11 +2,10 @@ import './App.css';
 
 import Chat from './components/Chat';
 import Vanta from './components/Vanta';
-import Contact from './components/Contact';
+import Contact from './components/About';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Signup from './components/Signup';
-import Signin from './components/Signin';
-import Nav from './components/Nav'
+import Bmi from './components/Bmi';
+import About from './components/About';
 
 function App() {
 
@@ -14,17 +13,11 @@ function App() {
     
     <BrowserRouter>
     <Routes>
-    <Route exact path ="/signup" element={<Signup/>}></Route>
     <Route exact path ="/" element={<Vanta/>}></Route>
-        {/* <Nav /> */}
-      {/* <Routes>
-        <Route exact path ="/contact" element={<Contact/>}></Route>
-        <Route exact path ="/" element={<Vanta />}></Route>
-        <Route exact path ="/chat" element={<Chat/>}></Route>
-      </Routes> */}
       <Route exact path ="/contact" element={<Contact/>}></Route>
-      <Route exact path ="/signin" element={<Signin/>}></Route>
-      
+      <Route exact path ="/chat" element={<Chat/>}></Route> 
+      <Route exact path ="/bmi" element={<Bmi/>}></Route> 
+      <Route exact path ="/about" element={<About/>}></Route> 
       </Routes>
   </BrowserRouter>
   
