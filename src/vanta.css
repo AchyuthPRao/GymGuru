@@ -1,8 +1,22 @@
-VANTA.WAVES({
-    el: '#my-background', // element selector string or DOM object reference
-    color: 0x000000,
-    waveHeight: 20,
-    shininess: 50,
-    waveSpeed: 1.5,
-    zoom: 0.75
-  })
+
+body{
+  background-color: #121A43;
+}
+#myBg { 
+  height: 90vh;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.head{
+  background: rgba( 255, 255, 255, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 12.5px );
+-webkit-backdrop-filter: blur( 12.5px );
+border-radius: 10px;
+padding: 20px;
+}

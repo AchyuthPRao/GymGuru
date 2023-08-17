@@ -5,12 +5,12 @@ import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import {MainContainer,ChatContainer,MessageList,Message,MessageInput,TypingIndicator} from "@chatscope/chat-ui-kit-react"
 
 
-const API_KEY = "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";
+const API_KEY = "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";
 function Chat() {
   const [typing,setTyping]= useState(false)
   const [messages,setMessages]=useState([
     {
-      message:"Hello,I am ChatGPT",
+      message:"Hello,I am your Gymguru",
       sender:"ChatGPT"
 
     }
@@ -88,11 +88,8 @@ function Chat() {
             <MessageInput placeholder='Type message here' onSend={handleSend}/>
           </ChatContainer>
         </MainContainer>
-
-
       </div>
-        
-        
+    
     </div>
   );
 }

@@ -12,7 +12,7 @@ border: 1px solid rgba(255, 255, 255, 0.19);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     
 }
 .heading{
@@ -27,3 +27,8 @@ border: 1px solid rgba(255, 255, 255, 0.19);
     align-items: center;
     justify-content: center;
 }
+.mynav{
+    padding: 10px;
+    line-height: 10px;
+}
+
