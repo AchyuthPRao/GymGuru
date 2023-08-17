@@ -7,10 +7,23 @@ backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.19);
 }  */
-.heading{
-    background-image: url(images/bg.jpg);
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
     
 }
-.head{
-    color: rgb(0, 0, 0);
+.heading{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
