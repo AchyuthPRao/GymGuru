@@ -1,14 +1,35 @@
+// import React from 'react'
+// import "../Nav.css"
+// import { Link } from 'react-router-dom'
+
+// function Nav() {
+//   return (
+    
+//       <div>
+//         <div className="nav">
+//           <div className="container">
+//             <Link className="link" to="/">GymGuru</Link>
+//             <Link className="link" to="/">Contact</Link>
+//             <Link className="link" to="/">Sign Out</Link>
+//           </div>
+//         </div>
+//       </div>
+    
+//   )
+// }
+
+// export default Nav;
+
+
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import myImg from "../images/db.jpg";
-import profile from "../images/profile.png"
-import "../App.css"
+import mylogo from "../images/db.jpg" 
 
 const navigation = [
-  { name: 'GymGuru', href: '#', current: true },
-  { name: 'Home', href: '#', current: false },
-  { name: 'Contact Us', href: '#', current: false },
+  { name: 'GymGuru', href: '/', current: true },
+  { name: 'Contact', href: '/Contact.js', current: false },
+  
 ]
 
 function classNames(...classes) {
@@ -17,10 +38,10 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-gray-800 ">
+    <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-10 mynav">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -37,8 +58,8 @@ export default function Example() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-12 w-auto logo"
-                    src={myImg}
+                    className="h-8 w-auto"
+                    src={mylogo}
                     alt="Your Company"
                   />
                 </div>
@@ -78,7 +99,7 @@ export default function Example() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src={profile}
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                         alt=""
                       />
                     </Menu.Button>
